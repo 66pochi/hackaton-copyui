@@ -897,7 +897,7 @@ const FreeUI: React.FC = () => {
           <Zap className="w-6 h-6 text-${color}-600" />
         </div>
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Fast Performance</h3>
-        <p className="text-gray-600 dark:text-gray-300">Lightning-fast loading and smooth interactions.</p>
+        <p className="text-gray-600 dark:text-gray-300">Lightning-fast loading times and smooth interactions.</p>
       </div>
       <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
         <div className="w-12 h-12 bg-${color}-100 dark:bg-${color}-900/30 rounded-lg flex items-center justify-center mb-4">
@@ -1642,7 +1642,7 @@ const FreeUI: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#c8b6ff' }}>
+    <div className="min-h-screen bg-custom-gradient">
       <ScrollProgress />
       
       {/* Header */}
@@ -1867,7 +1867,7 @@ const FreeUI: React.FC = () => {
       </section>
 
       {/* Components Grid */}
-      <main className="py-8 sm:py-12" style={{ backgroundColor: '#c8b6ff' }}>
+      <main className="py-8 sm:py-12 bg-custom-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredComponents.length === 0 ? (
             <div className="text-center py-16">
@@ -2111,7 +2111,7 @@ const FreeUI: React.FC = () => {
       </section>
 
 {/* About Me Section */}
-<section className="relative py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+<section id="about" className="relative py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
@@ -2124,8 +2124,8 @@ const FreeUI: React.FC = () => {
 
     <div
       className="bg-[#fdf1f7] dark:bg-[#2a2a2a]
-                 rounded-2xl p-8 shadow-lg 
-                 border-2 border-pink-200 dark:border-pink-400/40 
+                 rounded-2xl p-8 shadow-lg
+                 border-2 border-pink-200 dark:border-pink-400/40
                  transition-all duration-300
                  hover:shadow-pink-300/50 dark:hover:shadow-pink-400/30
                  hover:ring-4 hover:ring-pink-300/40 dark:hover:ring-pink-400/40

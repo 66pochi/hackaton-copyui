@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
+  .animate-spin-slower {
+    animation: spin 16s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* Prism.js theme override for better dark mode support */
+.dark pre[class*="language-"] {
+  background: #0f172a !important;
+}
+
+.dark code[class*="language-"] {
+  color: #e2e8f0 !important;
+}
+
+
+/* global.css */
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  font-family: Arial, sans-serif;
+}
+
+@layer utilities {
+  .bg-custom-gradient {
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  }
+}
